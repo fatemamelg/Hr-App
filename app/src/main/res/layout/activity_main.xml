@@ -10,66 +10,83 @@
         android:id="@+id/mark"
         android:layout_width="193dp"
         android:layout_height="118dp"
-        android:text="Mark Attendance"
-
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="60dp"
         android:background="@color/orange"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="38dp" />
+        android:text="Mark Attendance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/history"
         android:layout_width="193dp"
         android:layout_height="118dp"
-        android:text="Attendance History"
+        android:layout_marginTop="60dp"
         android:background="@color/rose"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="38dp" />
+        android:text="Attendance History"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mark"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="193dp"
         android:layout_height="118dp"
+        android:layout_marginTop="60dp"
         android:text="Apply Leave"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="218dp" />
+        app:layout_constraintEnd_toStartOf="@+id/leave_quota"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mark" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/leave_quota"
         android:layout_width="193dp"
         android:layout_height="118dp"
+        android:layout_marginTop="60dp"
         android:text="Leave Quota"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="218dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/history" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/leave_status"
         android:layout_width="193dp"
         android:layout_height="118dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
         android:text="Leave Status"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="406dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/reimburse"
         android:layout_width="193dp"
         android:layout_height="118dp"
+        android:layout_marginTop="60dp"
         android:text="Reimbursement"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="406dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/leave_status"
+        app:layout_constraintTop_toBottomOf="@+id/leave_quota" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/kyc"
         android:layout_width="193dp"
         android:layout_height="118dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginTop="60dp"
         android:text="KYC documents"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="580dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/logout"
         android:layout_width="193dp"
         android:layout_height="118dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
         android:text="Logout"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="580dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reimburse" />
 </androidx.constraintlayout.widget.ConstraintLayout>
